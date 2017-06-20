@@ -1,0 +1,28 @@
+/*font-family: 'Armata', sans-serif;*/
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body,h1,h2,h3,h4,h5,h6,span,input,label,small{
+  font-family: 'Armata', sans-serif !important;
+}
+.content-carousel{
+  margin: 16% auto;
+  width: 60%;
+  height: 400px !important;
+}
+.with-indicators{
+line-height: -5;
+}
+.content-span{
+  z-index: 10;
+}
+.strong-span{
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.btn-carousel{
+  background-color: #fbd43b;
+}
