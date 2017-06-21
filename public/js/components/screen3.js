@@ -7,7 +7,7 @@ const Screen3 = (update) => {
   const row2 = $('<div class="row"></div>');
   const span = $('<div class="content-span center"><span class="strong-span black-text">Para comenzar validamos tu número</span><p>Recibirás un SMS con un código de validación</p></div>');
   const row3 = $('<div class="row input-msg"></div>');
-  const inputField = $('<div class="input-field col s12"><img class="phone-number" src="img/icons/phoneandnumber.png" alt="Phone and number"></div>');
+  const inputField = $('<div class="input-field col s12"><img class="lock-img" src="img/icons/lock.png" alt=""></div>');
   const inputPass = $('<input value="" id="phone" type="text" class="validate text-center" placeholder="- - - - - -">');
   const divCenter = $('<div class="center"><span>Reintentar en <img class="img-clock" src="img/icons/clock.png" alt="">21 seg</span></div>');
 
