@@ -1,6 +1,6 @@
 'use strict';
 
-const Screen2 = () => {
+const Screen2 = (update) => {
   const container = $('<div class="container margin-container"></div>');
   const row = $('<div class="row"></div>');
   const img = $('<div class="col s4 push-s4"><img class="img-phone" src="img/icons/phone.png" alt="phone"></div>');
