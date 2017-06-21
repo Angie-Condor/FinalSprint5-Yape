@@ -1,7 +1,7 @@
 'use strict';
 
 const Screen1 = (update) => {
-  const container = $('<div class="container-fluid"></div>');
+  const container = $('<div class="container"></div>');
   const row = $('<div class="row"></div>');
   const carousel = $('<div class="carousel carousel-slider content-carousel" data-indicators="true"></div>');
   const item = $('<div class="carousel-item" href="#one!">');
@@ -28,10 +28,11 @@ const Screen1 = (update) => {
   item3.append(img3);
   item3.append(span3);
 
+  //----->Código para el carousel de Materialize
   $(document).ready(function(){
     $('.carousel.carousel-slider').carousel({fullWidth: true});
   });
-
+  //----->Función click para pasar al Screen2
   registrar.on('click',(e)=>{
     e.preventDefault();
     state.screen1 = null;

@@ -1,4 +1,4 @@
-/*font-family: 'Armata', sans-serif;*/
+/*Estilos generales*/
 *{
   box-sizing: border-box;
   margin: 0;
@@ -7,17 +7,21 @@
 body,h1,h2,h3,h4,h5,h6,span,input,label,small{
   font-family: 'Armata', sans-serif !important;
 }
+/*Estilos al Screen1*/
+/*//----->Carousel*/
 .content-carousel{
   margin: 16% auto 2% auto;
   width: 60%;
   height: 400px !important;
 }
+/*//----->Estilo al bullet*/
 .indicators .active{
   background-color: #f64552 !important;
 }
 .indicator-item{
-  background-color: #f8f8f8 !important;
+  background-color: #a4a1a1 !important;
 }
+/*//----->Estilo al texto del Screen1*/
 .content-span{
   z-index: 10;
 }
@@ -25,8 +29,50 @@ body,h1,h2,h3,h4,h5,h6,span,input,label,small{
   font-weight: bold;
   font-size: 1.5rem;
 }
+/*//----->Estilo al botón de Registrar*/
 .btn-carousel{
   background-color: #fbd43b;
-  margin: 0 21%;
+  margin: 0 20.5%;
   width: 60%;
+}
+
+/*Estilos al Screen2*/
+/*//----->Estilos a la imagen principal */
+.content-phone{
+  margin-top: 20%;
+}
+.img-phone{
+  width: 100%;
+  height: auto;
+}
+/*//----->Estilos al input*/
+#phone{
+  text-align: center;
+}
+.input-phone{
+  position: relative;
+}
+/*//----->Estilos a la img dentro del input*/
+.phone-number{
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  width: 60px;
+}
+/*//----->Estilos al checkbox*/
+.input-check{
+  margin-left: 5%;
+}
+[type="checkbox"].filled-in:not(:checked){
+  border: 2px solid #DFDFDF !important;
+}
+.input-check span{
+  color: #00c3a3;
+}
+/*//----->Estilos al botón Registrar*/
+.waves-effect{
+  background-color: #DFDFDF !important;
+}
+.btn-continue{
+  margin: 30% 30%;
 }

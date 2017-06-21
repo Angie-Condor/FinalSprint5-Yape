@@ -4,7 +4,7 @@ const render = (root) => {
   root.empty();
 
   const wrapper = $('<div class="wrapper"></div>');
-
+  //----->Condicional para las pantallas
   if(state.screen1 === true) {
       wrapper.append(Screen1(_=>{render(root)}));
     }else if(state.screen2 === true){
