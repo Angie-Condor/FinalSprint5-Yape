@@ -1,6 +1,6 @@
 'use strict';
 
-const Screen1 = () => {
+const Screen1 = (update) => {
   const container = $('<div class="container-fluid"></div>');
   const row = $('<div class="row"></div>');
   const carousel = $('<div class="carousel carousel-slider content-carousel" data-indicators="true"></div>');
@@ -31,6 +31,13 @@ const Screen1 = () => {
   $(document).ready(function(){
     $('.carousel.carousel-slider').carousel({fullWidth: true});
   });
+
+  registrar.on('click',(e)=>{
+    e.preventDefault();
+    state.screen1 = null;
+    state.screen2 = true;
+    update();
+  })
 
   return container;
 }

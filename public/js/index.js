@@ -2,23 +2,29 @@
 
 const render = (root) => {
   root.empty();
-  const wrapper = $('<div class="wrapper"></div>');
-  wrapper.append(Screen1());
 
-  root.append(wrapper);
+  const wrapper = $('<div class="wrapper"></div>');
+
+  if(state.screen1 === true) {
+      wrapper.append(Screen1(_=>{render(root)}));
+    }else if(state.screen2 === true){
+      wrapper.append(Screen2(_=>{render(root)}));
+      }
+
+    root.append(wrapper);
 }
 
 const state = {
-  user: null,
-  status: null
+  screen1: null,
+  screen2: null
 };
 
 $( _ => {
   // $.post('users.js', (body, data) => {
   //
-  //   if (data) { return alert(data.message);}
+  state.screen1= true;
 
-    const root = $('#root');
-    render(root);
+  const root = $('#root');
+  render(root);
   // });
 });

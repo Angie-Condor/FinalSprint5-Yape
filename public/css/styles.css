@@ -27,5 +27,6 @@ body,h1,h2,h3,h4,h5,h6,span,input,label,small{
 }
 .btn-carousel{
   background-color: #fbd43b;
-  margin: 0 30%;
+  margin: 0 21%;
+  width: 60%;
 }
