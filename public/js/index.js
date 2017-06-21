@@ -4,7 +4,6 @@ const render = (root) => {
   root.empty();
   const wrapper = $('<div class="wrapper"></div>');
   wrapper.append(Screen1());
-  // wrapper.append(Buscar());
 
   root.append(wrapper);
 }
@@ -15,11 +14,11 @@ const state = {
 };
 
 $( _ => {
-  $.post('users.js', (body, data) => {
-
-    if (data) { return alert(data.message);}
+  // $.post('users.js', (body, data) => {
+  //
+  //   if (data) { return alert(data.message);}
 
     const root = $('#root');
     render(root);
-  });
+  // });
 });

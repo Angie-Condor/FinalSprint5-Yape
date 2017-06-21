@@ -8,12 +8,15 @@ body,h1,h2,h3,h4,h5,h6,span,input,label,small{
   font-family: 'Armata', sans-serif !important;
 }
 .content-carousel{
-  margin: 16% auto;
+  margin: 16% auto 2% auto;
   width: 60%;
   height: 400px !important;
 }
-.with-indicators{
-line-height: -5;
+.indicators .active{
+  background-color: #f64552 !important;
+}
+.indicator-item{
+  background-color: #f8f8f8 !important;
 }
 .content-span{
   z-index: 10;
@@ -22,7 +25,7 @@ line-height: -5;
   font-weight: bold;
   font-size: 1.5rem;
 }
-
 .btn-carousel{
   background-color: #fbd43b;
+  margin: 0 30%;
 }
