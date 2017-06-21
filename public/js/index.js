@@ -9,14 +9,17 @@ const render = (root) => {
       wrapper.append(Screen1(_=>{render(root)}));
     }else if(state.screen2 === true){
       wrapper.append(Screen2(_=>{render(root)}));
-      }
+    }else if(state.screen3 === true){
+      wrapper.append(Screen3(_=>{render(root)}));
+    }
 
     root.append(wrapper);
 }
 
 const state = {
   screen1: null,
-  screen2: null
+  screen2: null,
+  screen3:null
 };
 
 $( _ => {

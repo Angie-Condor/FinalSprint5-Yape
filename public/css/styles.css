@@ -38,18 +38,18 @@ body,h1,h2,h3,h4,h5,h6,span,input,label,small{
 
 /*Estilos al Screen2*/
 /*//----->Estilos a la imagen principal */
-.content-phone{
+.margin-container{
   margin-top: 20%;
 }
-.img-phone{
+.img-phone, .img-msg{
   width: 100%;
   height: auto;
 }
 /*//----->Estilos al input*/
-#phone{
+.text-center{
   text-align: center;
 }
-.input-phone{
+.input-phone, .input-msg{
   position: relative;
 }
 /*//----->Estilos a la img dentro del input*/
@@ -75,4 +75,15 @@ body,h1,h2,h3,h4,h5,h6,span,input,label,small{
 }
 .btn-continue{
   margin: 30% 30%;
+}
+/*Estilos al Screen3*/
+.lock-img{
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  width: 20px;
+}
+.img-clock{
+  width: 20px;
+  margin-top: 2px;
 }
