@@ -10,12 +10,13 @@ const Screen4 = (update) => {
   const inputField = $('<div class="input-field col s12"><img class="user-img" src="img/icons/user.png" alt=""></div>');
   const inputPass = $('<input value="" id="phone" type="text" class="validate text-center" placeholder="Nombre">');
   const divCenter = $('<div class="center"><span>Cuida esta clave como oro, es tu acceso a Yape.</span></div>'+"21"+'');
-  const spanTime = $('<span></span>');
+  const crearCuenta = $('<a><div class="btn waves-effect waves-light btn-continue" disabled>CREAR CUENTA</div></a>');
 
   container.append(row);
   container.append(row2);
   container.append(row3);
   container.append(divCenter);
+  container.append(crearCuenta);
 
   row.append(img);
   row2.append(span);
