@@ -9,7 +9,7 @@ const Screen3 = (update) => {
   const row3 = $('<div class="row input-msg"></div>');
   const inputField = $('<div class="input-field col s12"><img class="lock-img" src="img/icons/lock.png" alt=""></div>');
   const inputPass = $('<input value="" id="phone" type="text" class="validate text-center" placeholder="- - - - - -">');
-  const divCenter = $('<div class="center"><span>Reintentar en <img class="img-clock" src="img/icons/clock.png" alt="">21 seg</span></div>');
+  const divCenter = $('<div class="center"><span>Reintentar en <img class="img-clock" src="img/icons/clock.png" alt=""> 21 seg</span></div>');
 
   container.append(row);
   container.append(row2);
@@ -21,12 +21,17 @@ const Screen3 = (update) => {
   row3.append(inputField);
   inputField.append(inputPass);
 
-  // continuar.on('click',(e)=>{
-  //   e.preventDefault();
-  //   state.screen2 = null;
-  //   state.screen3 = true;
-  //   update();
-  // })
+  inputPass.on('keyup',(e)=>{
+    e.preventDefault();
+    if($(e.target).val().length == 6){
+      state.screen1 = null;
+      state.screen2 = null;
+      state.screen3 = null;
+      state.screen4 = true;
+      update();
+    }
+
+  })
 
   return container;
 }
