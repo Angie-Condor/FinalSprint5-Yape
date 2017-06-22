@@ -28,6 +28,7 @@ body,h1,h2,h3,h4,h5,h6,span,input,label,small{
 .strong-span{
   font-weight: bold;
   font-size: 1.5rem;
+  color: #212121;
 }
 /*//----->Estilo al botón de Registrar*/
 .btn-carousel{
@@ -41,7 +42,7 @@ body,h1,h2,h3,h4,h5,h6,span,input,label,small{
 .margin-container{
   margin-top: 20%;
 }
-.img-phone, .img-msg{
+.img-phone, .img-msg, .img-check{
   width: 100%;
   height: auto;
 }
@@ -49,11 +50,11 @@ body,h1,h2,h3,h4,h5,h6,span,input,label,small{
 .text-center{
   text-align: center;
 }
-.input-phone, .input-msg{
+.input-phone, .input-msg, .input-name, .input-mail{
   position: relative;
 }
 /*//----->Estilos a la img dentro del input*/
-.phone-number, .user-img{
+.phone-number{
   position: absolute;
   top: 10px;
   left: 30px;
@@ -75,6 +76,7 @@ body,h1,h2,h3,h4,h5,h6,span,input,label,small{
 }
 .btn-continue{
   margin: 30% 30%;
+  color: #fff !important;
 }
 /*Estilos al Screen3*/
 .lock-img{
@@ -86,4 +88,33 @@ body,h1,h2,h3,h4,h5,h6,span,input,label,small{
 .img-clock{
   width: 20px;
   margin-top: 2px;
+}
+/*Estilos al Screen4*/
+.user-img, .msg-img{
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  width: 30px;
+}
+.btn-crear-cuenta{
+  margin: 7% 28%;
+  width: 45%;
+  color: #fff !important;
+}
+.no-mrg-btm{
+  margin-bottom: 0 !important;
+}
+.center .span-clave{
+  color: #8f8f8f;
+  margin: 0 5%;
+}
+/*Estilos al Screen5*/
+.check-container{
+  background-color: #FBD43B;
+  margin: 0 !important;
+  width: 100% !important;
+  height: 100vh !important;
+}
+.box-check-img{
+  padding-top: 40%;
 }

@@ -8,10 +8,10 @@ const Screen2 = (update) => {
   const span = $('<div class="content-span center"><span class="strong-span black-text">Para comenzar validamos tu número</span><p>Recibirás un SMS con un código de validación</p></div>');
   const row3 = $('<div class="row input-phone"></div>');
   const inputField = $('<div class="input-field col s12"><img class="phone-number" src="img/icons/phoneandnumber.png" alt="Phone and number"></div>');
-  const inputPhone = $('<input value="" id="phone" type="number" min="100000000" max="999999999" class="validate text-center" required>');
+  const inputPhone = $('<input value="" id="phone" type="number" class="validate text-center" required>');
   const errorSpan = $('<span>Usuario Inválido</span>');
   const inputCheck = $('<div class="input-check"><input type="checkbox" class="filled-in input-checkbox" id="filled-in-box"><label for="filled-in-box">Acepto los <span>Términos y Condiciones</span></label></div>');
-  const continuar = $('<a><div class="btn waves-effect waves-light btn-continue" disabled>CONTINUAR</div></a>');
+  const continuar = $('<a><div class="btn waves-effect waves-light btn-continue">CONTINUAR</div></a>');
 
   container.append(row);
   container.append(row2);
